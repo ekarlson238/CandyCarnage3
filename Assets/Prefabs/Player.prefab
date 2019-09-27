@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7238339524842682693}
   - component: {fileID: 7238339524842682692}
   - component: {fileID: 7238339524842682691}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7238339525604435118}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CameraHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 7238339525973586396}
   - component: {fileID: 1216762094}
   - component: {fileID: 1216762091}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 32
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &1216762091
 MonoBehaviour:
@@ -221,6 +221,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0091a55b43638a49a6d5e060a2536fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arrowPrefab: {fileID: 9162398274885315222, guid: ab750a0f91775f34995712c1f557d920,
+    type: 3}
+  arrowSpawnDistance: 2
+  timeBetweenShots: 0.3
 --- !u!1 &7238339526357456593
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,9 +237,10 @@ GameObject:
   - component: {fileID: 7238339526357456595}
   - component: {fileID: 7238339526357456597}
   - component: {fileID: 7238339526357456596}
-  m_Layer: 0
+  - component: {fileID: 472203611}
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -297,5 +302,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcff613c36479b5409d54cfad89228d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
-  playerBody: {fileID: 7238339526357456595}
+  speed: 500
+--- !u!114 &472203611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7238339526357456593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07f76ed83c31f5c458b1b0cada9c5e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+  invincibilityTime: 0.8

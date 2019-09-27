@@ -5,10 +5,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    [SerializeField]
-    private int speed;
+    [SerializeField][Tooltip("The player's movement speed (needs to be fairly high)")]
+    private int speed = 500;
     
-    [SerializeField]
     private Rigidbody playerBody;
 
     private float vertical;
@@ -19,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //playerBody = gameObject.GetComponent<Rigidbody>();
+        playerBody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -28,6 +27,9 @@ public class PlayerMovement : MonoBehaviour
         Move();
     }
 
+    /// <summary>
+    /// The player moves by setting their rigidbody's velocity rather than using transform.translate or addForce
+    /// </summary>
     private void Move()
     {
         velocity = playerBody.velocity;

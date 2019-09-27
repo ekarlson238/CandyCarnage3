@@ -7,7 +7,7 @@ public class PlayerAim : MonoBehaviour
     [SerializeField]
     private GameObject arrowPrefab;
 
-    [SerializeField]
+    [SerializeField][Tooltip("How far infront of the player the prefab spawns (can't be too close")]
     private float arrowSpawnDistance = 2;
 
     [SerializeField][Tooltip("Lower = faster")]
@@ -15,6 +15,7 @@ public class PlayerAim : MonoBehaviour
 
     private float timeSinceShot;
 
+    // Start is called before the first frame update
     private void Start()
     {
         timeSinceShot = timeBetweenShots;
@@ -29,6 +30,7 @@ public class PlayerAim : MonoBehaviour
 
     /// <summary>
     /// Rotates the player to face the mouse
+    /// The mouse must be above something to work; if there are no objects under the mouse, the player wont move.
     /// </summary>
     private void MouseRotate()
     {
@@ -43,13 +45,15 @@ public class PlayerAim : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// shots out the prefab if the fire button is down and hasnt shot since timeBetweenShots
+    /// </summary>
     private void Shoot()
     {
         Vector3 playerPos = transform.position;
         Vector3 playerDirection = transform.forward;
         Quaternion playerRotation = transform.rotation;
         
-
         Vector3 spawnPos = playerPos + playerDirection * arrowSpawnDistance;
 
         if (timeSinceShot <= timeBetweenShots)
