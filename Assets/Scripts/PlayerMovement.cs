@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-    [SerializeField][Tooltip("The player's movement speed (needs to be fairly high)")]
-    private int speed = 500;
+    //Will be edited with the CustomEditorGUI
+    [HideInInspector]
+    public float speed = 500f;
     
     private Rigidbody playerBody;
 

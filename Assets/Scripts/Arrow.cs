@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
-    [SerializeField][Tooltip("The arrow's movement speed")]
-    private int speed;
+    [HideInInspector]
+    public float speed = 15;
 
-    [SerializeField][Tooltip("The amount of time the arrow can exist for before automatically being destroyed")]
-    private int despawnTime = 1;
+    [HideInInspector]
+    public float despawnTime = 1;
 
     private float timePassed = 0;
 

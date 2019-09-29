@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+[System.Serializable]
 public class Enemy : MonoBehaviour
 {
     //Damage is the same for all enemies; different enemy types will need to be children of this class
-    [SerializeField][Tooltip("The damage for all enemies using this script")]
     private static int damage = 20;
+
     public static int enemyDamage
     {
         get { return damage; }
     }
 
-    [SerializeField][Tooltip("The enemy's max health")]
-    private int maxHealth = 200;
-    private int health;
+    [HideInInspector]
+    public float maxHealth = 200;
+    private float health;
 
-    [SerializeField][Tooltip("The force at which the enemy is knocked away when hitting the player (needs to be high)")]
-    private float force = 2000;
+    [HideInInspector]
+    public float knockbackForce = 20;
     private Rigidbody myRigidbody;
 
     private NavMeshAgent myNavMeshAgent;
@@ -88,9 +89,9 @@ public class Enemy : MonoBehaviour
             Vector3 direction = collision.contacts[0].point - transform.position;
             // We then get the opposite (-Vector3) and normalize it
             direction = -direction.normalized;
-            // And finally we add force in the direction of dir and multiply it by force. 
+            // And finally we set velocity in the direction of dir and multiply it by the knockback force. 
             // This will push back the player
-            myRigidbody.AddForce(direction * force);
+            myRigidbody.velocity = direction * knockbackForce;
         }
     }
 

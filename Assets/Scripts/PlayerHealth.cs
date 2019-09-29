@@ -5,14 +5,13 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField]
-    private int maxHealth = 200;
+    [HideInInspector]
+    public float maxHealth = 200;
 
-    private int health;
-
-    [SerializeField]
-    [Tooltip("After being damaged, the time needed to pass before the player can be damaged again")]
-    private float invincibilityTime = 1;
+    private float health;
+    
+    [HideInInspector]
+    public float invincibilityTime = 1;
 
     private float timeSinceDamaged;
     private bool isInvincible;
