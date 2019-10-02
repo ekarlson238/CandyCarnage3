@@ -26,7 +26,10 @@ public class Enemy : MonoBehaviour
     private GameObject[] players;
     private GameObject closestPlayer;
     private float distance;
-    private bool isDead = false; //even though the enemy is destoryed on death, this is needed to stop AttackPlayer()
+
+    [HideInInspector]
+    public bool isDead = false; //even though the enemy is destoryed on death, this is needed to stop AttackPlayer()
+    //and it is used by Door.cs
 
     // Start is called before the first frame update
     void Start()
