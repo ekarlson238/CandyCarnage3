@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     }
 
     [HideInInspector]
-    public float maxHealth = 200;
+    public float maxHealth = 100;
     private float health;
 
     [HideInInspector]
@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
     //and it is used by Door.cs
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         health = maxHealth;
         myNavMeshAgent = GetComponent<NavMeshAgent>();
@@ -41,7 +41,7 @@ public class Enemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         CheckIfDead();
         FindClosestPlayer();
@@ -59,6 +59,7 @@ public class Enemy : MonoBehaviour
     {
         if (health <= 0)
         {
+            Debug.Log(this.name + " Died");
             isDead = true;
             Destroy(gameObject);
         }
