@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    private Animator doorAnimator;
+    private Animator doorAnimator; //the animator is what will actually open the door
 
     [SerializeField]
     private Enemy miniBoss;
+
+    [HideInInspector]
+    public bool doorOpened = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,7 @@ public class Door : MonoBehaviour
         if (miniBoss.isDead)
         {
             OpenDoor();
+            doorOpened = true;
         }
     }
 
