@@ -97,6 +97,11 @@ public class Enemy : MonoBehaviour
             // This will push back the player
             myRigidbody.velocity = direction * knockbackForce;
         }
+
+        if (collision.gameObject.tag == "Death") //if they fall off the map, kill them
+        {
+            health = 0;
+        }
     }
 
     /// <summary>

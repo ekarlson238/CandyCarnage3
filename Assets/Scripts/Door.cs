@@ -6,6 +6,9 @@ public class Door : MonoBehaviour
 {
     private Animator doorAnimator; //the animator is what will actually open the door
 
+    [SerializeField][Tooltip("Don't need a check point for the door to work")]
+    private GameObject optionalCheckPoint;
+
     [SerializeField]
     private Enemy miniBoss;
 
@@ -26,10 +29,16 @@ public class Door : MonoBehaviour
 
     private void CheckIfMiniBossDestroyed()
     {
-        if (miniBoss.isDead)
+        if (miniBoss.isDead && !doorOpened)
         {
             OpenDoor();
-            doorOpened = true;
+
+            if (optionalCheckPoint != null)
+            {
+                PlayerRespawn.SetCheckPoint(optionalCheckPoint);
+            }
+
+            doorOpened = true; //just stops it from running OpenDoor over and over
         }
     }
 
