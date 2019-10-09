@@ -28,8 +28,8 @@ public class EnemySpawner : MonoBehaviour
     {
         enemyEmptyParent = GameObject.FindGameObjectWithTag("SpawnedEnemiesParent");
 
-        //timeSinceSpawn = timeBetweenSpawns; //spawns an enemy right away
-        timeSinceSpawn = 0; //spawns an enemy after timeBetweenSpawns has passed once
+        timeSinceSpawn = timeBetweenSpawns; //spawns an enemy right away
+        //timeSinceSpawn = 0; //spawns an enemy after timeBetweenSpawns has passed once
     }
 
     private void Update()
