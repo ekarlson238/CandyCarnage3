@@ -5,17 +5,20 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField]
-    private int maxHealth = 200;
+    [HideInInspector]
+    public float maxHealth = 200;
 
-    private int health;
-
-    [SerializeField]
-    [Tooltip("After being damaged, the time needed to pass before the player can be damaged again")]
-    private float invincibilityTime = 1;
+    [HideInInspector]
+    public float health;
+    
+    [HideInInspector]
+    public float invincibilityTime = 1;
 
     private float timeSinceDamaged;
     private bool isInvincible;
+
+    [HideInInspector]
+    public bool isDead = false;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,7 @@ public class PlayerHealth : MonoBehaviour
     private void Update()
     {
         InvinciblityTimer();
+        CheckIfDead();
     }
 
     /// <summary>
@@ -58,6 +62,24 @@ public class PlayerHealth : MonoBehaviour
             health -= Enemy.enemyDamage;
             timeSinceDamaged = 0;
             Debug.Log("Player has been hit!  Health:" + health);
+        }
+
+        if (collision.gameObject.tag == "Death") //if they fall off the map, kill them
+        {
+            health = 0;
+        }
+    }
+
+
+    /// <summary>
+    /// Destroys itself if it doesn't have any health left
+    /// </summary>
+    private void CheckIfDead()
+    {
+        if (health <= 0)
+        {
+            Debug.Log(this.name + " Died");
+            isDead = true;
         }
     }
 }

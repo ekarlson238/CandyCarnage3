@@ -7,7 +7,7 @@ public class PlayerAim : MonoBehaviour
     [SerializeField]
     private GameObject arrowPrefab;
 
-    [SerializeField][Tooltip("How far infront of the player the prefab spawns (can't be too close")]
+    [SerializeField][Tooltip("How far in front of the player the prefab spawns (can't be too close")]
     private float arrowSpawnDistance = 2;
 
     [SerializeField][Tooltip("Lower = faster")]
