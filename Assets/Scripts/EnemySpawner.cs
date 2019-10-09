@@ -68,9 +68,9 @@ public class EnemySpawner : MonoBehaviour
 
     public static void ClearSpawnedEnemies()
     {
-        foreach (Transform child in enemyEmptyParent.transform)
-        {
-            GameObject.Destroy(child.gameObject);
-        }
+        if (enemyEmptyParent != null)
+            foreach (Transform child in enemyEmptyParent.transform)
+                GameObject.Destroy(child.gameObject);
+            
     }
 }

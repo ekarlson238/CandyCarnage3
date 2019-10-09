@@ -36,6 +36,7 @@ public class PlayerRespawn : MonoBehaviour
             playerBody.position = checkPoint.transform.position;
             myHealth.health = myHealth.maxHealth;
             EnemySpawner.ClearSpawnedEnemies();
+            RoomHandler.SetInactive();
             myHealth.isDead = false;
         }
     }
