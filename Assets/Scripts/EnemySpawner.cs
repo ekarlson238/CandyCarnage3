@@ -6,6 +6,8 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]
     private Enemy miniBoss;
+    
+    private static GameObject enemyEmptyParent;
 
     [SerializeField]
     [Tooltip("the enemy prefab that will be spawned")]
@@ -24,13 +26,21 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        enemyEmptyParent = GameObject.FindGameObjectWithTag("SpawnedEnemiesParent");
+
         //timeSinceSpawn = timeBetweenSpawns; //spawns an enemy right away
         timeSinceSpawn = 0; //spawns an enemy after timeBetweenSpawns has passed once
     }
 
     private void Update()
     {
-        Spawn();
+        if (!miniBoss.isDead)
+            Spawn();
+        else
+        {
+            ClearSpawnedEnemies();
+            Destroy(gameObject);
+        }
     }
 
     /// <summary>
@@ -49,10 +59,18 @@ public class EnemySpawner : MonoBehaviour
             timeSinceSpawn += Time.deltaTime;
         }
 
-        if (!miniBoss.isDead && timeSinceSpawn >= timeBetweenSpawns)
+        if (timeSinceSpawn >= timeBetweenSpawns)
         {
-            Instantiate(enemyPrefab, spawnPos, rotation);
-            timeSinceSpawn = 0;
+            Instantiate(enemyPrefab, spawnPos, rotation, enemyEmptyParent.transform);
+            timeSinceSpawn = 0; 
+        }
+    }
+
+    public static void ClearSpawnedEnemies()
+    {
+        foreach (Transform child in enemyEmptyParent.transform)
+        {
+            GameObject.Destroy(child.gameObject);
         }
     }
 }

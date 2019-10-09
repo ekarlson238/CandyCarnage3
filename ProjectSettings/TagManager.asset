@@ -9,6 +9,7 @@ TagManager:
   - Door
   - Death
   - Wall
+  - SpawnedEnemiesParent
   layers:
   - Default
   - TransparentFX
