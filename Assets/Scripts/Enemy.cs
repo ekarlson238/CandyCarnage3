@@ -14,6 +14,9 @@ public class Enemy : MonoBehaviour
         get { return damage; }
     }
 
+    [SerializeField]
+    private bool enemyCanMove = true;
+
     [HideInInspector]
     public float maxHealth = 100;
     private float health;
@@ -44,8 +47,12 @@ public class Enemy : MonoBehaviour
     public void Update()
     {
         CheckIfDead();
-        FindClosestPlayer();
-        AttackPlayer();
+
+        if (enemyCanMove)
+        {
+            FindClosestPlayer();
+            AttackPlayer();
+        }
 
         foreach(GameObject player in players)
             Debug.Log(player);
@@ -86,7 +93,7 @@ public class Enemy : MonoBehaviour
     private void OnCollisionStay(Collision collision)
     {
         // If the object we hit is the enemy
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && enemyCanMove)
         {
             Debug.Log("player hit");
             // Calculate Angle Between the collision point and the player
