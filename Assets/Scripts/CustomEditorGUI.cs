@@ -88,7 +88,7 @@ namespace CustomEditorGUI
             serializedObject.Update();
 
             GUIContent labelMaxHealth = new GUIContent("Max Health", "The enemy's max health");
-            EditorGUILayout.Slider(healthProp, 0, 500, labelMaxHealth);
+            EditorGUILayout.Slider(healthProp, 0, 1000, labelMaxHealth);
 
             GUIContent labelKnockbackForce = new GUIContent("Knockback Force", "The force at which the enemy is knocked away when hitting the player (needs to be high)");
             EditorGUILayout.Slider(knockbackProp, 0, 200, labelKnockbackForce);
