@@ -12,12 +12,16 @@ public class PlayerAim : MonoBehaviour
 
     [SerializeField][Tooltip("Lower = faster")]
     private float timeBetweenShots = 1;
+    
+    private AudioSource shotSFX;
 
     private float timeSinceShot;
 
     // Start is called before the first frame update
     private void Start()
     {
+        shotSFX = GetComponent<AudioSource>();
+
         timeSinceShot = timeBetweenShots;
     }
 
@@ -63,6 +67,9 @@ public class PlayerAim : MonoBehaviour
 
         if (Input.GetButton("Fire1") && timeSinceShot >= timeBetweenShots)
         {
+            if (shotSFX != null)
+                shotSFX.Play();
+
             Instantiate(arrowPrefab, spawnPos, playerRotation);
             timeSinceShot = 0;
         }

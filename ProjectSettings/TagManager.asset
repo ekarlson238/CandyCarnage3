@@ -10,6 +10,7 @@ TagManager:
   - Death
   - Wall
   - SpawnedEnemiesParent
+  - EnemyAudioManager
   layers:
   - Default
   - TransparentFX
