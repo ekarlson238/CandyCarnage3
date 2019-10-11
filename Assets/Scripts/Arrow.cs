@@ -13,7 +13,7 @@ public class Arrow : MonoBehaviour
     private float timePassed = 0;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         MoveForward();
         Despawn();
