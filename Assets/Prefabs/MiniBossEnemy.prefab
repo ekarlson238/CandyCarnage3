@@ -127,6 +127,7 @@ MonoBehaviour:
   enemyCanMove: 1
   maxHealth: 400
   knockbackForce: 20
+  deathSFX: {fileID: 0}
   isDead: 0
 --- !u!208 &1419329899950246524
 NavMeshObstacle:
