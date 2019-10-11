@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenuTest.unity
     guid: aa21e32347fa0a642a605567bcec07a3
   - enabled: 1
-    path: Assets/Scenes/EvansScene.unity
-    guid: bcfebd5924035a046861e9a1d49361c6
+    path: Assets/Scenes/SampleScene - Prototype 1.2.unity
+    guid: eb7c7a4eef9e6cd4fab4ee3f4f7c4bb5
   m_configObjects: {}
