@@ -388,9 +388,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyCanMove: 1
   maxHealth: 400
-  knockbackForce: 20
+  knockbackForce: 100
   optionalHealthBar: {fileID: 1107753270}
-  optionalBlackBar: {fileID: 1433017370}
   isDead: 0
 --- !u!208 &1419329899950246524
 NavMeshObstacle:

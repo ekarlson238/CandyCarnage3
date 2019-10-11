@@ -35,10 +35,8 @@ public class Enemy : MonoBehaviour
     private AudioSource deathSFX;
 
     [SerializeField][Tooltip("Used for bosses")]
-    private Image optionalHealthBar, optionalBlackBar;
-
-    private float healthBarLength;
-
+    private Image optionalHealthBar;
+    
     [HideInInspector]
     public bool isDead = false; //even though the enemy is destoryed on death, this is needed to stop AttackPlayer()
     //and it is used by Door.cs
@@ -46,8 +44,6 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
-        if (optionalBlackBar != null)
-            healthBarLength = optionalBlackBar.rectTransform.rect.width;
 
         enemyAudioManager = GameObject.FindGameObjectWithTag("EnemyAudioManager");
         deathSFX = enemyAudioManager.GetComponent<AudioSource>();
@@ -165,7 +161,7 @@ public class Enemy : MonoBehaviour
     
     private void UpdateHealthBar()
     {
-        if (optionalBlackBar != null && optionalHealthBar != null)
+        if (optionalHealthBar != null)
         {
             optionalHealthBar.fillAmount = health / maxHealth;
         }
