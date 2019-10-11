@@ -1344,7 +1344,6 @@ GameObject:
   - component: {fileID: 159300492}
   - component: {fileID: 159300495}
   - component: {fileID: 159300494}
-  - component: {fileID: 159300493}
   m_Layer: 0
   m_Name: FloorWalkway
   m_TagString: Untagged
@@ -1366,19 +1365,6 @@ Transform:
   m_Father: {fileID: 1710931231}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &159300493
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159300491}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &159300494
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1435,7 +1421,6 @@ GameObject:
   - component: {fileID: 161258255}
   - component: {fileID: 161258258}
   - component: {fileID: 161258257}
-  - component: {fileID: 161258256}
   m_Layer: 0
   m_Name: TutorialFloor (3)
   m_TagString: Untagged
@@ -1458,19 +1443,6 @@ Transform:
   m_Father: {fileID: 2041149849}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &161258256
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 161258254}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &161258257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1982,7 +1954,6 @@ GameObject:
   - component: {fileID: 247835151}
   - component: {fileID: 247835154}
   - component: {fileID: 247835153}
-  - component: {fileID: 247835152}
   m_Layer: 0
   m_Name: Floor (2)
   m_TagString: Untagged
@@ -2005,19 +1976,6 @@ Transform:
   m_Father: {fileID: 1392534938}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &247835152
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247835150}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &247835153
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2889,7 +2847,6 @@ GameObject:
   - component: {fileID: 399413901}
   - component: {fileID: 399413904}
   - component: {fileID: 399413903}
-  - component: {fileID: 399413902}
   m_Layer: 0
   m_Name: TutorialFloor (2)
   m_TagString: Untagged
@@ -2912,19 +2869,6 @@ Transform:
   m_Father: {fileID: 568785468}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &399413902
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399413900}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &399413903
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3675,7 +3619,6 @@ GameObject:
   - component: {fileID: 472680682}
   - component: {fileID: 472680685}
   - component: {fileID: 472680684}
-  - component: {fileID: 472680683}
   m_Layer: 0
   m_Name: FloorWalkway
   m_TagString: Untagged
@@ -3697,19 +3640,6 @@ Transform:
   m_Father: {fileID: 1875570502}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &472680683
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472680681}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &472680684
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4867,7 +4797,6 @@ GameObject:
   - component: {fileID: 660688760}
   - component: {fileID: 660688763}
   - component: {fileID: 660688762}
-  - component: {fileID: 660688761}
   m_Layer: 0
   m_Name: Floor (5)
   m_TagString: Untagged
@@ -4890,19 +4819,6 @@ Transform:
   m_Father: {fileID: 1131059315}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &660688761
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660688759}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &660688762
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9792,7 +9708,6 @@ GameObject:
   - component: {fileID: 1320343213}
   - component: {fileID: 1320343216}
   - component: {fileID: 1320343215}
-  - component: {fileID: 1320343214}
   m_Layer: 0
   m_Name: FloorWalkway
   m_TagString: Untagged
@@ -9814,19 +9729,6 @@ Transform:
   m_Father: {fileID: 660688760}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1320343214
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320343212}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1320343215
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10025,8 +9927,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 7.6735296, y: 1, z: 19.65534}
+  m_Center: {x: 3.0154374, y: 0, z: 9.32767}
 --- !u!23 &1328524493
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10874,7 +10776,6 @@ GameObject:
   - component: {fileID: 1447763711}
   - component: {fileID: 1447763714}
   - component: {fileID: 1447763713}
-  - component: {fileID: 1447763712}
   m_Layer: 0
   m_Name: FloorWalkway
   m_TagString: Untagged
@@ -10896,19 +10797,6 @@ Transform:
   m_Father: {fileID: 247835151}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1447763712
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447763710}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1447763713
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11943,7 +11831,6 @@ GameObject:
   - component: {fileID: 1710931231}
   - component: {fileID: 1710931234}
   - component: {fileID: 1710931233}
-  - component: {fileID: 1710931232}
   m_Layer: 0
   m_Name: Floor (3)
   m_TagString: Untagged
@@ -11966,19 +11853,6 @@ Transform:
   m_Father: {fileID: 280140715}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1710931232
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710931230}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1710931233
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12178,7 +12052,6 @@ GameObject:
   - component: {fileID: 1759239313}
   - component: {fileID: 1759239316}
   - component: {fileID: 1759239315}
-  - component: {fileID: 1759239314}
   m_Layer: 0
   m_Name: Floor (4)
   m_TagString: Untagged
@@ -12201,19 +12074,6 @@ Transform:
   m_Father: {fileID: 882333953}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1759239314
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1759239312}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1759239315
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12377,7 +12237,6 @@ GameObject:
   - component: {fileID: 1815114904}
   - component: {fileID: 1815114907}
   - component: {fileID: 1815114906}
-  - component: {fileID: 1815114905}
   m_Layer: 0
   m_Name: FloorWalkway
   m_TagString: Untagged
@@ -12399,19 +12258,6 @@ Transform:
   m_Father: {fileID: 399413901}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1815114905
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815114903}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1815114906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12671,7 +12517,6 @@ GameObject:
   - component: {fileID: 1872978030}
   - component: {fileID: 1872978033}
   - component: {fileID: 1872978032}
-  - component: {fileID: 1872978031}
   m_Layer: 0
   m_Name: FloorWalkway
   m_TagString: Untagged
@@ -12693,19 +12538,6 @@ Transform:
   m_Father: {fileID: 1328524491}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1872978031
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872978029}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1872978032
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12762,7 +12594,6 @@ GameObject:
   - component: {fileID: 1875570502}
   - component: {fileID: 1875570505}
   - component: {fileID: 1875570504}
-  - component: {fileID: 1875570503}
   m_Layer: 0
   m_Name: TutorialFloor (4)
   m_TagString: Untagged
@@ -12785,19 +12616,6 @@ Transform:
   m_Father: {fileID: 1293859768}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1875570503
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875570501}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1875570504
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13286,7 +13104,6 @@ GameObject:
   - component: {fileID: 1907449492}
   - component: {fileID: 1907449491}
   - component: {fileID: 1907449490}
-  - component: {fileID: 1907449489}
   m_Layer: 0
   m_Name: Floor (1)
   m_TagString: Untagged
@@ -13294,19 +13111,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1907449489
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1907449488}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1907449490
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13968,7 +13772,6 @@ GameObject:
   - component: {fileID: 2011787734}
   - component: {fileID: 2011787737}
   - component: {fileID: 2011787736}
-  - component: {fileID: 2011787735}
   m_Layer: 0
   m_Name: FloorWalkway
   m_TagString: Untagged
@@ -13990,19 +13793,6 @@ Transform:
   m_Father: {fileID: 1759239313}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &2011787735
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2011787733}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2011787736
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14195,7 +13985,6 @@ GameObject:
   - component: {fileID: 2069773659}
   - component: {fileID: 2069773662}
   - component: {fileID: 2069773661}
-  - component: {fileID: 2069773660}
   m_Layer: 0
   m_Name: FloorWalkway
   m_TagString: Untagged
@@ -14217,19 +14006,6 @@ Transform:
   m_Father: {fileID: 161258255}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2069773660
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069773658}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2069773661
 MeshRenderer:
   m_ObjectHideFlags: 0
