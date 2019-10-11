@@ -30,6 +30,8 @@ public class Enemy : MonoBehaviour
     private GameObject closestPlayer;
     private float distance;
 
+    private AudioSource deathSFX;
+
     [HideInInspector]
     public bool isDead = false; //even though the enemy is destoryed on death, this is needed to stop AttackPlayer()
     //and it is used by Door.cs
@@ -37,6 +39,8 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
+        deathSFX = GetComponent<AudioSource>();
+
         health = maxHealth;
         myNavMeshAgent = GetComponent<NavMeshAgent>();
         players = GameObject.FindGameObjectsWithTag("Player");
@@ -67,6 +71,8 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Debug.Log(this.name + " Died");
+            if (deathSFX != null)
+                deathSFX.Play();
             isDead = true;
             Destroy(gameObject);
         }
