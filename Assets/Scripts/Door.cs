@@ -13,7 +13,7 @@ public class Door : MonoBehaviour
     private Enemy miniBoss;
     
     [HideInInspector]
-    public bool doorOpened = false;
+    public bool doorOpen = false;
 
     // Start is called before the first frame update
     void Start()
@@ -29,21 +29,33 @@ public class Door : MonoBehaviour
 
     private void CheckIfMiniBossDestroyed()
     {
-        if (miniBoss.isDead && !doorOpened)
+        if (miniBoss == null && !doorOpen)
         {
-            OpenDoor();
+            InitialOpenDoor();
 
             if (optionalCheckPoint != null)
             {
                 PlayerRespawn.SetCheckPoint(optionalCheckPoint);
             }
 
-            doorOpened = true; //just stops it from running OpenDoor over and over
+            doorOpen = true; //just stops it from running OpenDoor over and over
         }
     }
 
-    private void OpenDoor()
+    private void InitialOpenDoor()
     {
         doorAnimator.SetBool("DoorOpenable", true);
+    }
+
+    public void OpenDoor()
+    {
+        doorAnimator.SetBool("DoorClosed", false);
+        doorAnimator.SetBool("DoorOpen", true);
+    }
+
+    public void CloseDoor()
+    {
+        doorAnimator.SetBool("DoorOpen", false);
+        doorAnimator.SetBool("DoorClosed", true);
     }
 }

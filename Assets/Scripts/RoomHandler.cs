@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,18 +11,25 @@ public class RoomHandler : MonoBehaviour
     [SerializeField]
     private Enemy miniBoss;
 
-    //[HideInInspector]
+    [HideInInspector]
     public bool cleared = false;
+
+    [HideInInspector]
+    public bool entered = false;
 
     private Enemy[] enemies;
     private EnemySpawner[] spawners;
-    
+
+    private RoomManager roomManager;
+
     private void Start()
     {
         enemies = roomContents.GetComponentsInChildren<Enemy>();
         spawners = roomContents.GetComponentsInChildren<EnemySpawner>();
 
         roomContents.SetActive(false);
+
+        roomManager = GameObject.FindObjectOfType<RoomManager>();
     }
 
     private void Update()
@@ -29,16 +37,32 @@ public class RoomHandler : MonoBehaviour
         CheckIfCleared();
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+            if (cleared)
+                roomManager.OpenOldDoors();
+    }
+
     private void CheckIfCleared()
     {
-        if (miniBoss.isDead)
+        if (miniBoss == null)
+        {
             cleared = true;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
-            roomContents.SetActive(true);
+        {
+            if (!entered)
+            {
+                roomContents.SetActive(true);
+                roomManager.CloseAllDoors();
+                entered = true;
+            }
+        }
     }
 
     public void ResetRoom()
