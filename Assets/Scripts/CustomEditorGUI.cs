@@ -106,11 +106,13 @@ namespace CustomEditorGUI
         private static readonly string[] _dontIncludeMe = new string[] { "m_Script" };
 
         SerializedProperty speedProp;
+        SerializedProperty damageProp;
         SerializedProperty despawnProp;
 
         private void OnEnable()
         {
             speedProp = serializedObject.FindProperty("speed");
+            damageProp = serializedObject.FindProperty("damage");
             despawnProp = serializedObject.FindProperty("despawnTime");
         }
 
@@ -120,6 +122,9 @@ namespace CustomEditorGUI
 
             GUIContent labelSpeed = new GUIContent("Speed", "The arrow's movement speed");
             EditorGUILayout.Slider(speedProp, 0, 30, labelSpeed);
+
+            GUIContent labelDamage = new GUIContent("Damage", "The arrow's damage");
+            EditorGUILayout.Slider(damageProp, 1, 50, labelDamage);
 
             GUIContent labelDespawnTime = new GUIContent("Despawn Time", "The amount of time the arrow can exist for before automatically being destroyed");
             EditorGUILayout.Slider(despawnProp, 0, 2, labelDespawnTime);

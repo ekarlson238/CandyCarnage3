@@ -8,6 +8,10 @@ public class Arrow : MonoBehaviour
     public float speed = 15;
 
     [HideInInspector]
+    public float damage = 20;
+    public static float staticDamage;
+
+    [HideInInspector]
     public float despawnTime = 1;
 
     private float timePassed = 0;
@@ -15,6 +19,8 @@ public class Arrow : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        staticDamage = damage;
+
         MoveForward();
         Despawn();
     }
