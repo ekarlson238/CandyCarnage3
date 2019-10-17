@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1326035340939119238}
   - component: {fileID: 1326035340939119239}
   - component: {fileID: 1326035340939119258}
-  - component: {fileID: 1326035340939119260}
   - component: {fileID: 1326035340939119261}
   - component: {fileID: 2748507773232940183}
   m_Layer: 0
@@ -129,22 +128,6 @@ MonoBehaviour:
   knockbackForce: 100
   optionalHealthBar: {fileID: 0}
   isDead: 0
---- !u!208 &1326035340939119260
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1326035340939119236}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.75, y: 0.5, z: 0.75}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!195 &1326035340939119261
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -154,7 +137,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1326035340939119236}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.7
+  m_Radius: 0.8
   m_Speed: 6
   m_Acceleration: 1000
   avoidancePriority: 50
@@ -166,7 +149,7 @@ NavMeshAgent:
   m_Height: 1
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 0
+  m_ObstacleAvoidanceType: 4
 --- !u!82 &2748507773232940183
 AudioSource:
   m_ObjectHideFlags: 0

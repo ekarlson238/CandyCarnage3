@@ -12,6 +12,9 @@ public class PlayerRespawn : MonoBehaviour
 
     [SerializeField]
     private GameObject firstCheckPoint;
+    
+    [SerializeField]
+    private RoomManager roomManager;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +39,7 @@ public class PlayerRespawn : MonoBehaviour
             playerBody.position = checkPoint.transform.position;
             myHealth.health = myHealth.maxHealth;
             EnemySpawner.ClearSpawnedEnemies();
+            roomManager.ResetUnclearedRooms();
             RoomHandler.SetInactive();
             myHealth.isDead = false;
         }

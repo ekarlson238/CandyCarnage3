@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+  damage: 20
   despawnTime: 2
 --- !u!1 &9162398275809154893
 GameObject:

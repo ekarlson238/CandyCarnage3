@@ -41,17 +41,31 @@ public class Enemy : MonoBehaviour
     public bool isDead = false; //even though the enemy is destoryed on death, this is needed to stop AttackPlayer()
     //and it is used by Door.cs
 
+    private Vector3 startingPosition;
+    
     // Start is called before the first frame update
-    public void Start()
+    public void Awake()
     {
+        ResetHealth();
+
+        startingPosition = transform.position;
 
         enemyAudioManager = GameObject.FindGameObjectWithTag("EnemyAudioManager");
         deathSFX = enemyAudioManager.GetComponent<AudioSource>();
 
-        health = maxHealth;
         myNavMeshAgent = GetComponent<NavMeshAgent>();
         players = GameObject.FindGameObjectsWithTag("Player");
         myRigidbody = GetComponent<Rigidbody>();
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = startingPosition;
+    }
+
+    public void ResetHealth()
+    {
+        health = maxHealth;
     }
 
     // Update is called once per frame
@@ -96,7 +110,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.tag == "Attack")
         {
-            health -= 20;
+            health -= Arrow.staticDamage;
             Debug.Log(health);
         }
     }
@@ -166,5 +180,4 @@ public class Enemy : MonoBehaviour
             optionalHealthBar.fillAmount = health / maxHealth;
         }
     }
-
 }

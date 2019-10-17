@@ -11,7 +11,7 @@ public class Door : MonoBehaviour
 
     [SerializeField]
     private Enemy miniBoss;
-
+    
     [HideInInspector]
     public bool doorOpened = false;
 
