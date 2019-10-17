@@ -19,7 +19,7 @@ public class EndstateScript : MonoBehaviour
 
     [SerializeField]
     [Tooltip("Place the boss enemy here.")]
-    private GameObject bossEnemy;
+    private Enemy bossEnemy;
 
     [SerializeField]
     [Tooltip("Type the name of the scene you want to reload here.")]
@@ -37,11 +37,13 @@ public class EndstateScript : MonoBehaviour
     void Start()
     {
         endPanel.SetActive(false);
+
+        Time.timeScale = 1;
     }
 
     private void Update()
     {
-        if (bossEnemy == null)
+        if (bossEnemy.isDead)
         {
             endPanel.SetActive(true);
             healthPanel.SetActive(false);
