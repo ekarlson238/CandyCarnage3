@@ -40,6 +40,7 @@ public class PlayerRespawn : MonoBehaviour
             myHealth.health = myHealth.maxHealth;
             EnemySpawner.ClearSpawnedEnemies();
             roomManager.ResetUnclearedRooms();
+            roomManager.OpenOldDoors();
             RoomHandler.SetInactive();
             myHealth.isDead = false;
         }

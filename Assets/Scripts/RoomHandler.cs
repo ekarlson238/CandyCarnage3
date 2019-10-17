@@ -5,9 +5,6 @@ using UnityEngine;
 
 public class RoomHandler : MonoBehaviour
 {
-    [SerializeField]
-    private Door doorToClose;
-
     [SerializeField][Tooltip("What will be enabled when the player enters the room")]
     private GameObject roomContents;
 
@@ -17,11 +14,13 @@ public class RoomHandler : MonoBehaviour
     [HideInInspector]
     public bool cleared = false;
 
+    [HideInInspector]
+    public bool entered = false;
+
     private Enemy[] enemies;
     private EnemySpawner[] spawners;
 
     private RoomManager roomManager;
-    
 
     private void Start()
     {
@@ -38,19 +37,31 @@ public class RoomHandler : MonoBehaviour
         CheckIfCleared();
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+            if (cleared)
+                roomManager.OpenOldDoors();
+    }
+
     private void CheckIfCleared()
     {
-        if (miniBoss.isDead)
+        if (miniBoss == null)
+        {
             cleared = true;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            roomContents.SetActive(true);
-
-            doorToClose.CloseDoor();
+            if (!entered)
+            {
+                roomContents.SetActive(true);
+                roomManager.CloseAllDoors();
+                entered = true;
+            }
         }
     }
 

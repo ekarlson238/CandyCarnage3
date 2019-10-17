@@ -14,9 +14,6 @@ public class Door : MonoBehaviour
     
     [HideInInspector]
     public bool doorOpen = false;
-    
-    [HideInInspector]
-    public bool doorFirstOpened = false;
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +39,6 @@ public class Door : MonoBehaviour
             }
 
             doorOpen = true; //just stops it from running OpenDoor over and over
-            doorFirstOpened = true;
         }
     }
 
