@@ -9,10 +9,16 @@ public class RoomManager : MonoBehaviour
 
     private RoomHandler[] rooms;
 
+    private Door[] doors;
+
+    private Door lastDoor;
+
     // Start is called before the first frame update
     void Start()
     {
         rooms = GameObject.FindObjectsOfType<RoomHandler>();
+
+        doors = GameObject.FindObjectsOfType<Door>();
 
         firstRoomContents.SetActive(true);
     }
@@ -22,7 +28,9 @@ public class RoomManager : MonoBehaviour
         foreach (RoomHandler r in rooms)
         {
             if (!r.cleared)
+            {
                 r.ResetRoom();
+            }
         }
     }
 }
