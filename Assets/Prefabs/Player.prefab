@@ -401,6 +401,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 275
+  dashTime: 0.1
+  dashSpeedMultiplyer: 10
+  dashCooldown: 2
+  dashCooldownTimer: 0
 --- !u!114 &472203611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,3 +434,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstCheckPoint: {fileID: 0}
+  roomManager: {fileID: 0}

@@ -15,16 +15,36 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 velocity;
 
+    private bool dashing = false;
+
+    [SerializeField][Tooltip("How long the player will dash for")]
+    private float dashTime = 0.1f;
+    private float dashTimeCounter;
+
+    [SerializeField][Tooltip("What speed sould be multiplied by while dashing")]
+    private float dashSpeedMultiplyer = 10;
+
+    [Tooltip("How long before the player can dash again")]
+    public float dashCooldown = 3;
+    [HideInInspector]
+    public float dashCooldownTimer;
+
+    private Vector3 dashVelocity;
+
     // Start is called before the first frame update
     void Start()
     {
         playerBody = GetComponent<Rigidbody>();
+
+        dashTimeCounter = dashTime;
+        dashCooldownTimer = dashCooldown;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         Move();
+        Dash();
     }
 
     /// <summary>
@@ -40,6 +60,35 @@ public class PlayerMovement : MonoBehaviour
         velocity.z = vertical * speed * Time.deltaTime;
         velocity.x = horizontal * speed * Time.deltaTime;
 
-        playerBody.velocity = velocity;
+        if (!dashing)
+            playerBody.velocity = velocity;
+    }
+
+    private void Dash()
+    {
+        if (Input.GetButton("Fire3"))
+        {
+            if ((vertical != 0 || horizontal != 0) && !dashing && dashCooldownTimer >= dashCooldown)
+            {
+                dashing = true;
+                dashTimeCounter = 0;
+                dashVelocity = playerBody.velocity * dashSpeedMultiplyer;
+            }
+        }
+
+        if (dashing)
+        {
+            playerBody.velocity = dashVelocity;
+            dashCooldownTimer = 0;
+            dashTimeCounter += Time.deltaTime;
+
+            if (dashTimeCounter >= dashTime)
+                dashing = false;
+        }
+        else
+        {
+            if (dashCooldownTimer < dashCooldown)
+                dashCooldownTimer += Time.deltaTime;
+        }
     }
 }
