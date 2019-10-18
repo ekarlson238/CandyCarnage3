@@ -27,6 +27,10 @@ public class Door : MonoBehaviour
         CheckIfMiniBossDestroyed();
     }
 
+    /// <summary>
+    /// opens the door for the first time if the set miniboss (enemy) is destroyed
+    /// if a checkpoint is attatched, set it as the new checkpoint when the miniboss (enemy) dies
+    /// </summary>
     private void CheckIfMiniBossDestroyed()
     {
         if (miniBoss == null && !doorOpen)
@@ -42,17 +46,28 @@ public class Door : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// opens the door for the first time via the animator
+    /// </summary>
     private void InitialOpenDoor()
     {
         doorAnimator.SetBool("DoorOpenable", true);
     }
 
+    /// <summary>
+    /// opens the door via the animator
+    /// sets DoorClosed to false before setting DoorOpen to prevent the animation from looping
+    /// </summary>
     public void OpenDoor()
     {
         doorAnimator.SetBool("DoorClosed", false);
         doorAnimator.SetBool("DoorOpen", true);
     }
 
+    /// <summary>
+    /// closes the door via the animator
+    /// sets DoorOpen to false before setting DoorClosed to prevent the animation from looping
+    /// </summary>
     public void CloseDoor()
     {
         doorAnimator.SetBool("DoorOpen", false);

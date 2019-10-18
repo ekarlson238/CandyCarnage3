@@ -27,6 +27,9 @@ public class RoomManager : MonoBehaviour
         firstRoomContents.SetActive(true);
     }
 
+    /// <summary>
+    /// resets every room that's not set as cleared
+    /// </summary>
     public void ResetUnclearedRooms()
     {
         foreach (RoomHandler r in rooms)
@@ -39,6 +42,9 @@ public class RoomManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// closes every door in doors (doors contains every door in the scene)
+    /// </summary>
     public void CloseAllDoors()
     {
         foreach (Door d in doors)
@@ -47,6 +53,9 @@ public class RoomManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// opens every door that has been opened before (if its been opened before, the door's room has been cleared)
+    /// </summary>
     public void OpenOldDoors()
     {
         foreach (Door d in doors)

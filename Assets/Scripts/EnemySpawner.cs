@@ -62,11 +62,17 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// sets the spawners health back to their max health
+    /// </summary>
     public void ResetHealth()
     {
         health = maxHealth;
     }
 
+    /// <summary>
+    /// only spawn enemies if the miniboss is not dead
+    /// </summary>
     private void Update()
     {
         if (!miniBoss.isDead)
@@ -81,6 +87,9 @@ public class EnemySpawner : MonoBehaviour
         CheckIfDead();
     }
 
+    /// <summary>
+    /// destroys itself if it loses all of it's health
+    /// </summary>
     private void CheckIfDead()
     {
         if (health <= 0)
@@ -116,6 +125,9 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// destroy every enemy that have been spawned from a spawner
+    /// </summary>
     public static void ClearSpawnedEnemies()
     {
         if (enemyEmptyParent != null)
@@ -124,6 +136,9 @@ public class EnemySpawner : MonoBehaviour
             
     }
 
+    /// <summary>
+    /// if the enemy spawner has a healthbar, display the spawner's current health in it
+    /// </summary>
     private void UpdateHealthBar()
     {
         if (optionalHealthBar != null)

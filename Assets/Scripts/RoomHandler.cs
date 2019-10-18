@@ -22,6 +22,7 @@ public class RoomHandler : MonoBehaviour
 
     private RoomManager roomManager;
 
+    //start
     private void Start()
     {
         enemies = roomContents.GetComponentsInChildren<Enemy>();
@@ -32,11 +33,16 @@ public class RoomHandler : MonoBehaviour
         roomManager = GameObject.FindObjectOfType<RoomManager>();
     }
 
+    //update
     private void Update()
     {
         CheckIfCleared();
     }
 
+    /// <summary>
+    /// if the player is in a handler where the miniboss is dead, open all previously opened doors
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -44,6 +50,9 @@ public class RoomHandler : MonoBehaviour
                 roomManager.OpenOldDoors();
     }
 
+    /// <summary>
+    /// sets the room as cleared when the m
+    /// </summary>
     private void CheckIfCleared()
     {
         if (miniBoss == null)
@@ -52,6 +61,10 @@ public class RoomHandler : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// activates the room's enemies when the player enters the room
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -65,6 +78,9 @@ public class RoomHandler : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// resets every enemy and spawner in the room
+    /// </summary>
     public void ResetRoom()
     {
         foreach (Enemy e in enemies)
@@ -82,6 +98,9 @@ public class RoomHandler : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// deactivates every room's enemies (public static because it's called by the respawn script)
+    /// </summary>
     public static void SetInactive()
     {
         foreach (RoomHandler rh in UnityEngine.Object.FindObjectsOfType(typeof(RoomHandler)))

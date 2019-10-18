@@ -58,11 +58,17 @@ public class Enemy : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody>();
     }
 
+    /// <summary>
+    /// Sets the enemy's postition to where they spawned
+    /// </summary>
     public void ResetPosition()
     {
         transform.position = startingPosition;
     }
 
+    /// <summary>
+    /// Sets the enemy's health back to thier max health
+    /// </summary>
     public void ResetHealth()
     {
         health = maxHealth;
@@ -173,6 +179,9 @@ public class Enemy : MonoBehaviour
         closestPlayer = closest;
     }
     
+    /// <summary>
+    /// Updates the health bar UI to display health (as a bar)
+    /// </summary>
     private void UpdateHealthBar()
     {
         if (optionalHealthBar != null)

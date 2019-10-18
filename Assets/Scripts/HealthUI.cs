@@ -17,6 +17,9 @@ public class HealthUI : MonoBehaviour
         UpdateHealthBar();
     }
 
+    /// <summary>
+    /// Updates the player health bar UI to display health (as a bar)
+    /// </summary>
     private void UpdateHealthBar()
     {
         healthBar.fillAmount = playerHealth.health / playerHealth.maxHealth;

@@ -64,6 +64,10 @@ public class PlayerMovement : MonoBehaviour
             playerBody.velocity = velocity;
     }
 
+    /// <summary>
+    /// if dash is off cooldown, and the player is actually moving in a direction, dash when "Fire3" is pressed
+    /// the dash will last for dashTime and the cooldown time will be dashCooldown
+    /// </summary>
     private void Dash()
     {
         if (Input.GetButton("Fire3"))

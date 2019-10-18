@@ -8,11 +8,18 @@ public class DontRotateChild : MonoBehaviour
 
     private Quaternion rotation;
     
+    /// <summary>
+    /// sets the initial rotation to (0,0,0) so we dont need to worry about roation issues
+    /// </summary>
     void Awake()
     {
         transform.eulerAngles = new Vector3(0, 0, 0);
         rotation = transform.rotation;
     }
+
+    /// <summary>
+    /// sets the rotation equal to the set rotation at the end of every frame
+    /// </summary>
     void LateUpdate()
     {
         transform.rotation = rotation;

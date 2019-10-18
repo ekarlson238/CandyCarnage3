@@ -20,11 +20,7 @@ public class EndstateScript : MonoBehaviour
     [SerializeField]
     [Tooltip("Place the boss enemy here.")]
     private Enemy bossEnemy;
-
-    [SerializeField]
-    [Tooltip("Type the name of the scene you want to reload here.")]
-    private string sceneToLoad;
-
+    
     [SerializeField]
     [Tooltip("Type the name of the menu scene you want to load here.")]
     private string mainMenuScene;
@@ -41,9 +37,12 @@ public class EndstateScript : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    /// <summary>
+    /// opens the end UI when the boss is killed
+    /// </summary>
     private void Update()
     {
-        if (bossEnemy.isDead)
+        if (bossEnemy == null)
         {
             endPanel.SetActive(true);
             healthPanel.SetActive(false);
@@ -52,11 +51,17 @@ public class EndstateScript : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Restart the active scene
+    /// </summary>
     public void Retry()
     {
-        SceneManager.LoadScene(sceneToLoad);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    /// <summary>
+    /// load whatever scene is set as mainMenuScene
+    /// </summary>
     public void MainMenu()
     {
         SceneManager.LoadScene(mainMenuScene);

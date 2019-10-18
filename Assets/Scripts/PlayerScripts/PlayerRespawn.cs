@@ -46,6 +46,11 @@ public class PlayerRespawn : MonoBehaviour
         }
     }
 
+
+    /// <summary>
+    /// takes in a new checkpoint and sets it as the current checkpoint for everyone
+    /// </summary>
+    /// <param name="newCheckPoint">The new checkpoint</param>
     public static void SetCheckPoint(GameObject newCheckPoint)
     {
         checkPoint = newCheckPoint;
