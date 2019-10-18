@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 dashing = true;
                 dashTimeCounter = 0;
-                dashVelocity = playerBody.velocity * dashSpeedMultiplyer;
+                dashVelocity = velocity.normalized * speed * Time.deltaTime * dashSpeedMultiplyer;
             }
         }
 
