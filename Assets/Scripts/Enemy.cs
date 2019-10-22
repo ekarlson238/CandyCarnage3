@@ -43,6 +43,12 @@ public class Enemy : MonoBehaviour
     //and it is used by Door.cs
 
     private Vector3 startingPosition;
+
+    //scale
+    private float scale = 1;
+    private float xScale;
+    private float yScale;
+    private float zScale;
     
     // Start is called before the first frame update
     public void Awake()
@@ -57,6 +63,10 @@ public class Enemy : MonoBehaviour
         myNavMeshAgent = GetComponent<NavMeshAgent>();
         players = GameObject.FindGameObjectsWithTag("Player");
         myRigidbody = GetComponent<Rigidbody>();
+
+        xScale = transform.localScale.x;
+        yScale = transform.localScale.y;
+        zScale = transform.localScale.z;
     }
 
     /// <summary>
@@ -81,6 +91,7 @@ public class Enemy : MonoBehaviour
         CheckIfDead();
 
         UpdateHealthBar();
+        UpdateScale();
 
         if (enemyCanMove)
         {
@@ -189,5 +200,22 @@ public class Enemy : MonoBehaviour
         {
             optionalHealthBar.fillAmount = health / maxHealth;
         }
+    }
+
+    /// <summary>
+    /// changes the enemies scale based on their health
+    /// </summary>
+    private void UpdateScale()
+    {
+        if (scale > 0.5f)
+            scale = health / maxHealth + 0.5f;
+        else
+            scale = 0.5f;
+
+        //never let the scale be greater than 1
+        if (scale > 1)
+            scale = 1;
+        
+        transform.localScale = new Vector3(xScale * scale, yScale * scale, zScale * scale);
     }
 }
