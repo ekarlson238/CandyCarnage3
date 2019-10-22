@@ -45,6 +45,8 @@ public class Enemy : MonoBehaviour
     private Vector3 startingPosition;
 
     //scale
+    [SerializeField]
+    private float minimunScale;
     private float scale = 1;
     private float xScale;
     private float yScale;
@@ -207,10 +209,10 @@ public class Enemy : MonoBehaviour
     /// </summary>
     private void UpdateScale()
     {
-        if (scale > 0.5f)
-            scale = health / maxHealth + 0.5f;
+        if (scale > minimunScale)
+            scale = health / maxHealth + minimunScale;
         else
-            scale = 0.5f;
+            scale = minimunScale;
 
         //never let the scale be greater than 1
         if (scale > 1)
