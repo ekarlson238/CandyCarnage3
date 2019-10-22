@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyCanMove: 1
-  maxHealth: 15
+  maxHealth: 10
   health: 0
   knockbackForce: 100
   optionalHealthBar: {fileID: 0}
