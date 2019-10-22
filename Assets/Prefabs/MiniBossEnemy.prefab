@@ -126,6 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyCanMove: 1
   maxHealth: 400
+  health: 0
   knockbackForce: 100
   optionalHealthBar: {fileID: 1107753270}
   isDead: 0

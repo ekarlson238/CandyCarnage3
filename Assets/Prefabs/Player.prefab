@@ -5180,10 +5180,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcff613c36479b5409d54cfad89228d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 275
-  dashTime: 0.12
+  speed: 325
+  dashTime: 0.1
   dashSpeedMultiplyer: 10
-  dashCooldown: 2
+  dashCooldown: 1.5
   dashCooldownTimer: 0
 --- !u!114 &472203611
 MonoBehaviour:

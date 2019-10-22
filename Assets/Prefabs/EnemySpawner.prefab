@@ -116,7 +116,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 1326035340939119236, guid: 47fd45dc4ad62a844939913c5e37d138,
     type: 3}
   enemySpawnDistance: 1
-  timeBetweenSpawns: 5
+  timeBetweenSpawns: 2.5
   optionalHealthBar: {fileID: 2087614153536808186}
 --- !u!65 &6320792271299649343
 BoxCollider:
