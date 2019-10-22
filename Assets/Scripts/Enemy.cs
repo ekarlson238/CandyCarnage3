@@ -20,7 +20,8 @@ public class Enemy : MonoBehaviour
 
     [HideInInspector]
     public float maxHealth = 100;
-    private float health;
+    [HideInInspector]
+    public float health;
 
     [HideInInspector]
     public float knockbackForce = 20;

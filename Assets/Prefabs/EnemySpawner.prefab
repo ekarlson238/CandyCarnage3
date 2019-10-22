@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -1326618519306293488}
   m_Layer: 0
   m_Name: EnemySpawner
-  m_TagString: EnemySpawner
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 200
+  health: 0
   miniBoss: {fileID: 0}
   enemyPrefab: {fileID: 1326035340939119236, guid: 47fd45dc4ad62a844939913c5e37d138,
     type: 3}
