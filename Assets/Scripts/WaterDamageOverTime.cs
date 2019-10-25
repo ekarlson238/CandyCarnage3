@@ -12,7 +12,7 @@ public class WaterDamageOverTime : MonoBehaviour
     
     private void Start()
     {
-        dotTimeCounter = WaterAttack.waterDotTime;
+        AddDot();
 
         possibleEnemy = GetComponent<Enemy>();
         possibleEnemySpawner = GetComponent<EnemySpawner>();
