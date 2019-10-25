@@ -801,11 +801,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35566596}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 98.65298, y: 548.34094, z: -346.9588}
-  m_LocalScale: {x: 11.827588, y: 0.97, z: 97.92782}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 44.8675, y: -96.956665, z: 28.778107}
+  m_LocalScale: {x: 11.827592, y: 0.97, z: 97.92788}
   m_Children: []
-  m_Father: {fileID: 871912365}
+  m_Father: {fileID: 991150405}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &35566598
@@ -1080,7 +1080,7 @@ GameObject:
   m_Component:
   - component: {fileID: 41096739}
   m_Layer: 0
-  m_Name: DiningHall (1)
+  m_Name: CastleRoom10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1104,7 +1104,7 @@ Transform:
   - {fileID: 584386418}
   - {fileID: 1562592693}
   m_Father: {fileID: 829722959}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &41233702
 GameObject:
@@ -2149,7 +2149,7 @@ Transform:
   - {fileID: 446011609}
   - {fileID: 983717992}
   m_Father: {fileID: 871912365}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &92257372
 PrefabInstance:
@@ -3031,7 +3031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 129010089}
   m_Layer: 0
-  m_Name: GreatHall (2)
+  m_Name: CastleRoom11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3051,7 +3051,7 @@ Transform:
   - {fileID: 1320183701}
   - {fileID: 1836501926}
   m_Father: {fileID: 829722959}
-  m_RootOrder: 13
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &131399021
 GameObject:
@@ -3161,6 +3161,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131399021}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &133287112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 133287113}
+  m_Layer: 0
+  m_Name: CastleMoatFloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &133287113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133287112}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -30.569527, y: 417.0055, z: -134.16916}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 398012978}
+  - {fileID: 1740805946}
+  m_Father: {fileID: 1494274615}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &135811039
 GameObject:
   m_ObjectHideFlags: 0
@@ -5449,7 +5481,7 @@ Transform:
   - {fileID: 1344236989}
   - {fileID: 545199193}
   m_Father: {fileID: 1077946924}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &198113610
 GameObject:
@@ -6298,7 +6330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 231335685}
   m_Layer: 0
-  m_Name: GreatHall (3)
+  m_Name: CastleRoom9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6318,7 +6350,7 @@ Transform:
   - {fileID: 202458046}
   - {fileID: 1598088153}
   m_Father: {fileID: 829722959}
-  m_RootOrder: 19
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!1 &231752209
 GameObject:
@@ -7097,11 +7129,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265464203}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 10.595009, y: 548.2835, z: -341.98016}
-  m_LocalScale: {x: 81.15512, y: 1, z: 81.53932}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 132.92548, y: -97.0141, z: 23.799469}
+  m_LocalScale: {x: 81.15515, y: 1, z: 81.53935}
   m_Children: []
-  m_Father: {fileID: 871912365}
+  m_Father: {fileID: 991150405}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &265464205
@@ -9144,12 +9176,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349973954}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 58.91323, y: 4.7777634, z: 88.821045}
-  m_LocalScale: {x: 12.996058, y: 0.97, z: 32.568012}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -143.22858, y: -96.95666, z: 89.0197}
+  m_LocalScale: {x: 12.996077, y: 0.97, z: 32.568058}
   m_Children: []
-  m_Father: {fileID: 1077946924}
-  m_RootOrder: 0
+  m_Father: {fileID: 700286464}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &349973956
 MeshRenderer:
@@ -10164,7 +10196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 390785854}
   m_Layer: 0
-  m_Name: Room (6)
+  m_Name: BackLeftTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10188,7 +10220,7 @@ Transform:
   - {fileID: 1156228531}
   - {fileID: 154379838}
   m_Father: {fileID: 829722959}
-  m_RootOrder: 15
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &393306008
 GameObject:
@@ -10324,11 +10356,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398012977}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.70710677}
-  m_LocalPosition: {x: -72.75626, y: 320.04883, z: -147.73767}
+  m_LocalPosition: {x: -42.186737, y: -96.956665, z: -13.568512}
   m_LocalScale: {x: 15.542926, y: 0.96999997, z: 15.773649}
   m_Children: []
-  m_Father: {fileID: 1494274615}
-  m_RootOrder: 2
+  m_Father: {fileID: 133287113}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &398012979
 MeshRenderer:
@@ -11348,11 +11380,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434731911}
-  m_LocalRotation: {x: -0, y: 0.018530278, z: -0, w: -0.99982834}
-  m_LocalPosition: {x: 2.5, y: 548.34094, z: -333.1}
-  m_LocalScale: {x: 14.784454, y: 0.97, z: 35.785706}
+  m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: -0.70710677}
+  m_LocalPosition: {x: -96.91567, y: -96.956665, z: 28.574936}
+  m_LocalScale: {x: 14.784466, y: 0.97, z: 35.785725}
   m_Children: []
-  m_Father: {fileID: 1772400616}
+  m_Father: {fileID: 2111709777}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &434731913
@@ -13126,10 +13158,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499134387}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.779232, y: 4.720337, z: 26.474953}
-  m_LocalScale: {x: 40, y: 1, z: 84.69271}
+  m_LocalPosition: {x: 133.1925, y: -97.014084, z: 145.68805}
+  m_LocalScale: {x: 40, y: 1, z: 77.59614}
   m_Children: []
-  m_Father: {fileID: 888671017}
+  m_Father: {fileID: 844884030}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &499134389
@@ -18612,6 +18644,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693611545}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &700286463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 700286464}
+  m_Layer: 0
+  m_Name: CastleRoom1Floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &700286464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700286463}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -30.106472, y: 101.73442, z: -54.407505}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2069512349}
+  - {fileID: 349973955}
+  m_Father: {fileID: 1077946924}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &701119514
 GameObject:
   m_ObjectHideFlags: 0
@@ -19335,7 +19399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 718250583}
   m_Layer: 0
-  m_Name: TutorialRoom (5)
+  m_Name: CastleRoom5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19359,7 +19423,7 @@ Transform:
   - {fileID: 1627533914}
   - {fileID: 709744964}
   m_Father: {fileID: 829722959}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &728482405
 GameObject:
@@ -19479,7 +19543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 732896317}
   m_Layer: 0
-  m_Name: Walls
+  m_Name: CastleStartWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23020,17 +23084,17 @@ Transform:
   - {fileID: 1077946924}
   - {fileID: 1756492169}
   - {fileID: 2015769283}
+  - {fileID: 1715202520}
   - {fileID: 718250583}
   - {fileID: 1414892421}
   - {fileID: 1941878556}
-  - {fileID: 129010089}
-  - {fileID: 1579585784}
-  - {fileID: 390785854}
-  - {fileID: 1715202520}
-  - {fileID: 1753101821}
-  - {fileID: 41096739}
-  - {fileID: 231335685}
   - {fileID: 969312507}
+  - {fileID: 231335685}
+  - {fileID: 41096739}
+  - {fileID: 129010089}
+  - {fileID: 390785854}
+  - {fileID: 1753101821}
+  - {fileID: 1579585784}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23250,6 +23314,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837250508}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &844884029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 844884030}
+  m_Layer: 0
+  m_Name: CastleGreatHllFloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &844884030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844884029}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -102.41327, y: 101.73442, z: -132.53705}
+  m_LocalScale: {x: 1, y: 1, z: 1.0914553}
+  m_Children:
+  - {fileID: 499134388}
+  - {fileID: 1768738222}
+  m_Father: {fileID: 888671017}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &845024105
 GameObject:
   m_ObjectHideFlags: 0
@@ -24045,9 +24141,8 @@ Transform:
   m_LocalPosition: {x: 41.307213, y: -426.37878, z: -389.11218}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 265464204}
-  - {fileID: 35566597}
   - {fileID: 91868479}
+  - {fileID: 991150405}
   m_Father: {fileID: 829722959}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -24574,9 +24669,8 @@ Transform:
   m_LocalPosition: {x: 0.2, y: 117.18437, z: 50.5}
   m_LocalScale: {x: 1, y: 1, z: 0.9162079}
   m_Children:
-  - {fileID: 499134388}
-  - {fileID: 1768738222}
   - {fileID: 1489434163}
+  - {fileID: 844884030}
   m_Father: {fileID: 829722959}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26173,7 +26267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 969312507}
   m_Layer: 0
-  m_Name: GreatHall (4)
+  m_Name: CastleRoom8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26193,7 +26287,7 @@ Transform:
   - {fileID: 34983944}
   - {fileID: 1605915376}
   m_Father: {fileID: 829722959}
-  m_RootOrder: 20
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &970188777
 GameObject:
@@ -26239,7 +26333,7 @@ Transform:
   - {fileID: 1536719973}
   - {fileID: 354994015}
   m_Father: {fileID: 1494274615}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &974353223
 GameObject:
@@ -27265,6 +27359,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2103250337}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &991150404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991150405}
+  m_Layer: 0
+  m_Name: CastleRightTurretFloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &991150405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991150404}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 143.52048, y: 645.2976, z: -318.1807}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 265464204}
+  - {fileID: 35566597}
+  m_Father: {fileID: 871912365}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1015386014
 GameObject:
@@ -28579,12 +28705,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072890004}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.779232, y: 4.720337, z: 26.474953}
-  m_LocalScale: {x: 40, y: 1, z: 84.69271}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -22.230093, y: -97.014084, z: 98.55229}
+  m_LocalScale: {x: 40.000027, y: 1, z: 77.596344}
   m_Children: []
-  m_Father: {fileID: 1941878556}
-  m_RootOrder: 0
+  m_Father: {fileID: 2052365605}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1072890006
 MeshRenderer:
@@ -28641,7 +28767,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1077946924}
   m_Layer: 0
-  m_Name: Room1
+  m_Name: CastleRoom1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28658,9 +28784,8 @@ Transform:
   m_LocalPosition: {x: -156.62077, y: 117.18437, z: -40.825035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 349973955}
-  - {fileID: 2069512349}
   - {fileID: 197218741}
+  - {fileID: 700286464}
   m_Father: {fileID: 829722959}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -32546,12 +32671,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1253119865}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 16.86925, y: 4.7203445, z: 77.89259}
-  m_LocalScale: {x: 17.529823, y: 1, z: 14.427604}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 24.879246, y: -97.01408, z: 112.46228}
+  m_LocalScale: {x: 16.061018, y: 1, z: 14.427625}
   m_Children: []
-  m_Father: {fileID: 1941878556}
-  m_RootOrder: 1
+  m_Father: {fileID: 2052365605}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1253119867
 MeshRenderer:
@@ -35402,11 +35527,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348651811}
-  m_LocalRotation: {x: -0, y: 0.99982834, z: -0, w: 0.018530278}
-  m_LocalPosition: {x: 4.997223, y: 548.2835, z: -277.80563}
-  m_LocalScale: {x: 81.155205, y: 1, z: 81.5394}
+  m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.70710677}
+  m_LocalPosition: {x: -152.07951, y: -97.0141, z: 33.119324}
+  m_LocalScale: {x: 81.15528, y: 1, z: 81.53947}
   m_Children: []
-  m_Father: {fileID: 1772400616}
+  m_Father: {fileID: 2111709777}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1348651813
@@ -37229,7 +37354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1414892421}
   m_Layer: 0
-  m_Name: TutorialRoom (6)
+  m_Name: CastleRoom6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37253,7 +37378,7 @@ Transform:
   - {fileID: 534119198}
   - {fileID: 701119515}
   m_Father: {fileID: 829722959}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -89.54201, z: 0}
 --- !u!1 &1415429131
 GameObject:
@@ -39012,7 +39137,7 @@ Transform:
   - {fileID: 2033216073}
   - {fileID: 107498503}
   m_Father: {fileID: 888671017}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1492552837
 GameObject:
@@ -39149,9 +39274,8 @@ Transform:
   m_LocalPosition: {x: -71.643745, y: -198.08669, z: 63.23767}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1740805946}
   - {fileID: 970188778}
-  - {fileID: 398012978}
+  - {fileID: 133287113}
   m_Father: {fileID: 829722959}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41382,7 +41506,7 @@ Transform:
   - {fileID: 1830463755}
   - {fileID: 179437360}
   m_Father: {fileID: 829722959}
-  m_RootOrder: 14
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581266563
 GameObject:
@@ -42501,7 +42625,7 @@ Transform:
   - {fileID: 1505889775}
   - {fileID: 417818279}
   m_Father: {fileID: 1941878556}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1627533913
 GameObject:
@@ -44504,7 +44628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1715202520}
   m_Layer: 0
-  m_Name: TutorialRoom (7)
+  m_Name: CastleRoom4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44528,7 +44652,7 @@ Transform:
   - {fileID: 1659182843}
   - {fileID: 10636291}
   m_Father: {fileID: 829722959}
-  m_RootOrder: 16
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1721602485
 PrefabInstance:
@@ -45220,11 +45344,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740805945}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -72.38358, y: 319.9914, z: -177.2377}
-  m_LocalScale: {x: 44.95294, y: 1, z: 74.2644}
+  m_LocalPosition: {x: -41.814056, y: -97.0141, z: -43.068542}
+  m_LocalScale: {x: 44.952957, y: 1, z: 74.26443}
   m_Children: []
-  m_Father: {fileID: 1494274615}
-  m_RootOrder: 0
+  m_Father: {fileID: 133287113}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1740805947
 MeshRenderer:
@@ -45684,7 +45808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1753101821}
   m_Layer: 0
-  m_Name: Room (7)
+  m_Name: BackRightTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45708,7 +45832,7 @@ Transform:
   - {fileID: 182915043}
   - {fileID: 772761394}
   m_Father: {fileID: 829722959}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1756492168
 GameObject:
@@ -45720,7 +45844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1756492169}
   m_Layer: 0
-  m_Name: Room2
+  m_Name: CastleRoom2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45880,10 +46004,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768738221}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 3.2070282, y: 4.7203445, z: -8.559654}
-  m_LocalScale: {x: 16.060873, y: 1, z: 15.746973}
+  m_LocalPosition: {x: 105.6203, y: -97.01408, z: 113.58907}
+  m_LocalScale: {x: 16.060873, y: 1, z: 14.427504}
   m_Children: []
-  m_Father: {fileID: 888671017}
+  m_Father: {fileID: 844884030}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1768738223
@@ -45958,9 +46082,8 @@ Transform:
   m_LocalPosition: {x: -532.0928, y: -426.37878, z: -32.51217}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1348651812}
-  - {fileID: 434731912}
   - {fileID: 2058676169}
+  - {fileID: 2111709777}
   m_Father: {fileID: 829722959}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -87.87601, z: 0}
@@ -49966,7 +50089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1941878556}
   m_Layer: 0
-  m_Name: GreatHall (1)
+  m_Name: CastleRoom7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49983,11 +50106,10 @@ Transform:
   m_LocalPosition: {x: -148.7, y: 117.18437, z: 58.4}
   m_LocalScale: {x: 1, y: 1, z: 0.91621}
   m_Children:
-  - {fileID: 1072890005}
-  - {fileID: 1253119866}
   - {fileID: 1626785963}
+  - {fileID: 2052365605}
   m_Father: {fileID: 829722959}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1942869276
 GameObject:
@@ -51689,7 +51811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2015769283}
   m_Layer: 0
-  m_Name: Room2 (1)
+  m_Name: CastleRoom3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52556,6 +52678,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049083408}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2052365604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2052365605}
+  m_Layer: 0
+  m_Name: CastleRoom7Floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2052365605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052365604}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 129.33151, y: 101.73442, z: 50.738083}
+  m_LocalScale: {x: 1.0914531, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1253119866}
+  - {fileID: 1072890005}
+  m_Father: {fileID: 1941878556}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2053876887
 GameObject:
   m_ObjectHideFlags: 0
@@ -52802,7 +52956,7 @@ Transform:
   - {fileID: 1351659726}
   - {fileID: 41233703}
   m_Father: {fileID: 1772400616}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2063865581
 GameObject:
@@ -53045,12 +53199,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069512348}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 94.08041, y: 4.7777634, z: 94.799194}
-  m_LocalScale: {x: 43.32019, y: 0.97, z: 39.425125}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -149.20673, y: -96.95666, z: 124.186905}
+  m_LocalScale: {x: 43.320248, y: 0.97, z: 39.42518}
   m_Children: []
-  m_Father: {fileID: 1077946924}
-  m_RootOrder: 1
+  m_Father: {fileID: 700286464}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &2069512350
 MeshRenderer:
@@ -54189,6 +54343,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110265085}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2111709776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2111709777}
+  m_Layer: 0
+  m_Name: CastleLeftTurretFloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2111709777
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111709776}
+  m_LocalRotation: {x: -0, y: 0.6938825, z: -0, w: 0.7200883}
+  m_LocalPosition: {x: -22.464176, y: 645.2976, z: -431.00793}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1348651812}
+  - {fileID: 434731912}
+  m_Father: {fileID: 1772400616}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2116312382
 GameObject:
   m_ObjectHideFlags: 0
