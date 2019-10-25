@@ -22,6 +22,13 @@ public class WaterAttack : MonoBehaviour
         waterDotTime = dotTime;
     }
 
+    /// <summary>
+    /// checks if the thing being collided with is tagged as an enemy
+    /// if they are tagged as an enemy, check if they have a WaterDamageOverTime component
+    /// if they dont, add one
+    /// if they do, reset the DOT's timer
+    /// </summary>
+    /// <param name="other">What the particle system is colliding with</param>
     void OnParticleCollision(GameObject other)
     {
         if (other.tag == "Enemy")

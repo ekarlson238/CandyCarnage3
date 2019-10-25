@@ -12,16 +12,22 @@ public class WaterDamageOverTime : MonoBehaviour
     
     private void Start()
     {
+        dotTimeCounter = WaterAttack.waterDotTime;
+
         possibleEnemy = GetComponent<Enemy>();
         possibleEnemySpawner = GetComponent<EnemySpawner>();
     }
 
+    //using fixed update so frame rate doesnt effect dps (it could happen with update on some rare cases)
     // Update is called once per frame
     void FixedUpdate()
     {
         CheckForDot();
     }
 
+    /// <summary>
+    /// if the DOT has time left, deal damage each tick (normalized by Time.deltaTime) and count down the time left
+    /// </summary>
     private void CheckForDot()
     {
         if (dotTimeCounter > 0)
@@ -36,6 +42,9 @@ public class WaterDamageOverTime : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// resets the dot time left to max time
+    /// </summary>
     public void AddDot()
     {
         dotTimeCounter = WaterAttack.waterDotTime;

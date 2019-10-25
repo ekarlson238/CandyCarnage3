@@ -83,6 +83,9 @@ public class PlayerAim : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// emits particles from the particle system at a rate of 20
+    /// </summary>
     private void ShootWater()
     {
         if (Input.GetButton("Fire1"))
