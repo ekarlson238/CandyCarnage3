@@ -7,7 +7,8 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]
     private float maxHealth;
-    private float health;
+    [HideInInspector]
+    public float health;
 
     [SerializeField]
     private Enemy miniBoss;

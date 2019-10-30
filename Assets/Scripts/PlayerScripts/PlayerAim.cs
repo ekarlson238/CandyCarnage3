@@ -10,6 +10,8 @@ public class PlayerAim : MonoBehaviour
     [SerializeField]
     private GameObject arrowPrefab;
 
+    private ParticleSystem water;
+
     [SerializeField][Tooltip("How far in front of the player the prefab spawns (can't be too close")]
     private float arrowSpawnDistance = 2;
 
@@ -23,6 +25,8 @@ public class PlayerAim : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        water = GetComponentInChildren<ParticleSystem>();
+
         shotSFX = GetComponent<AudioSource>();
 
         timeSinceShot = timeBetweenShots;
@@ -32,7 +36,8 @@ public class PlayerAim : MonoBehaviour
     void Update()
     {
         MouseRotate();
-        Shoot();
+        //ShootArrow();
+        ShootWater();
     }
 
     /// <summary>
@@ -55,7 +60,7 @@ public class PlayerAim : MonoBehaviour
     /// <summary>
     /// shots out the prefab if the fire button is down and hasnt shot since timeBetweenShots
     /// </summary>
-    private void Shoot()
+    private void ShootArrow()
     {
         Vector3 playerPos = transform.position;
         Vector3 playerDirection = transform.forward;
@@ -75,6 +80,17 @@ public class PlayerAim : MonoBehaviour
 
             Instantiate(arrowPrefab, spawnPos, playerRotation);
             timeSinceShot = 0;
+        }
+    }
+
+    /// <summary>
+    /// emits particles from the particle system at a rate of 20
+    /// </summary>
+    private void ShootWater()
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            water.Emit(20);
         }
     }
 }

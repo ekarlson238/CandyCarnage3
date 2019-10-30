@@ -10,6 +10,6 @@ public class SetHeightToPlayer : MonoBehaviour
     void Start()
     {
         //sets the position to the player's position
-        this.transform.position = new Vector3(this.transform.position.x, player.transform.position.y, this.transform.position.z);
+        this.transform.position = new Vector3(this.transform.position.x, player.transform.position.y - (player.transform.lossyScale.y / 2), this.transform.position.z);
     }
 }
