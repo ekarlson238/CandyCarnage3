@@ -56,6 +56,8 @@ public class EndstateScript : MonoBehaviour
     /// </summary>
     public void Retry()
     {
+        Time.timeScale = 1;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -64,6 +66,8 @@ public class EndstateScript : MonoBehaviour
     /// </summary>
     public void MainMenu()
     {
+        Time.timeScale = 1;
+
         SceneManager.LoadScene(mainMenuScene);
     }
 
