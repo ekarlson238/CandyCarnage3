@@ -9,6 +9,8 @@ public class Door : MonoBehaviour
     [SerializeField][Tooltip("Don't need a check point for the door to work")]
     private GameObject optionalCheckPoint;
 
+    //TODO change this to take in 2 room handlers and open the door if either of their bosses is dead
+    //could do 2 bosses, but rooms will make the most sense at a glance
     [SerializeField]
     private Enemy miniBoss;
     
