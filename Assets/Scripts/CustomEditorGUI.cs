@@ -13,11 +13,11 @@ namespace CustomEditorGUI
     /// </summary>
     [CustomEditor(typeof(PlayerMovement))]
     [CanEditMultipleObjects]
-    public class PlayerMovementGUI : Editor
+    public class PlayerMovementGUI : UnityEditor.Editor
     {
         private static readonly string[] _dontIncludeMe = new string[] { "m_Script" };
 
-        SerializedProperty speedProp;
+        UnityEditor.SerializedProperty speedProp;
 
         private void OnEnable()
         {
