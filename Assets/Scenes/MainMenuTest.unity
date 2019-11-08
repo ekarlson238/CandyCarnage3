@@ -700,7 +700,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ab63144bc68ee464c843f591640b9b77, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -985,6 +985,16 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 80fc3cb874bbb2e42a6cf1e04a949a19, type: 2}
+    - target: {fileID: -6057140222963153312, guid: fd87247cbed454f47b9778c929457553,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: fd87247cbed454f47b9778c929457553,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -8634104826165506339, guid: fd87247cbed454f47b9778c929457553,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1090,6 +1100,16 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 80fc3cb874bbb2e42a6cf1e04a949a19, type: 2}
+    - target: {fileID: -6057140222963153312, guid: fd87247cbed454f47b9778c929457553,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: fd87247cbed454f47b9778c929457553,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -8634104826165506339, guid: fd87247cbed454f47b9778c929457553,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2057,6 +2077,16 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 80fc3cb874bbb2e42a6cf1e04a949a19, type: 2}
+    - target: {fileID: -6057140222963153312, guid: fd87247cbed454f47b9778c929457553,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: fd87247cbed454f47b9778c929457553,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -8634104826165506339, guid: fd87247cbed454f47b9778c929457553,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
