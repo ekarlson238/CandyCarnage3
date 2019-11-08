@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     //Will be edited with the CustomEditorGUI
-    [HideInInspector]
     public float speed = 500f;
     
     private Rigidbody playerBody;
@@ -26,8 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Tooltip("How long before the player can dash again")]
     public float dashCooldown = 3;
-    [HideInInspector]
-    public float dashCooldownTimer;
+    public float dashCooldownTimer = 1.5f;
 
     private Vector3 dashVelocity;
 

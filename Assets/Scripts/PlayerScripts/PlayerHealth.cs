@@ -5,13 +5,11 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [HideInInspector]
     public float maxHealth = 200;
 
     [HideInInspector]
     public float health;
     
-    [HideInInspector]
     public float invincibilityTime = 1;
 
     private float timeSinceDamaged;
