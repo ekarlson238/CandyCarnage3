@@ -18,12 +18,10 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private bool enemyCanMove = true;
 
-    [HideInInspector]
     public float maxHealth = 100;
     [HideInInspector]
     public float health;
 
-    [HideInInspector]
     public float knockbackForce = 20;
     private Rigidbody myRigidbody;
 
