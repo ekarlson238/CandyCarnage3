@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{789e2a02-68c0-44ec-8a2e-ce5033765f22}">
+		<property name="assetPath">
+			<value>cc_sx_game_plr_dash_test_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b2814445-6eab-4e6e-a5a9-3cbab4bc892e}</destination>
+		</relationship>
+	</object>
+</objects>
