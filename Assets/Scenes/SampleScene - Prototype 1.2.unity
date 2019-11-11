@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44536394, g: 0.49501455, b: 0.57398754, a: 1}
+  m_IndirectSpecularColor: {r: 0.44536418, g: 0.4950148, b: 0.573988, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2588,6 +2588,11 @@ PrefabInstance:
         type: 3}
       propertyPath: dashCooldownTimer
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7238339524842682691, guid: ab786c3f1f612634f80e2a4b8485de7a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab786c3f1f612634f80e2a4b8485de7a, type: 3}
@@ -15379,6 +15384,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309936631}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1310165064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7238339524842682690, guid: ab786c3f1f612634f80e2a4b8485de7a,
+    type: 3}
+  m_PrefabInstance: {fileID: 222340332}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1310165065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310165064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: -1
 --- !u!114 &1314683120 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7197127415865196805, guid: b137f6fb45e758d4fbf7f8c10df50d38,

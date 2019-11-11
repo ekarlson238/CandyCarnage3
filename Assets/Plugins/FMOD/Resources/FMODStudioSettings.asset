@@ -15,7 +15,7 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: FMOD Project\candycarnage\candycarnage.fspro
+  sourceProjectPath: FMOD Project/candycarnage/candycarnage.fspro
   sourceBankPath: FMOD Project\candycarnage\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
@@ -74,7 +74,9 @@ MonoBehaviour:
   - Platform: 20
     Value: 32
   Plugins: []
-  MasterBanks: []
-  Banks: []
+  MasterBanks:
+  - Master
+  Banks:
+  - Player
   BanksToLoad: []
   LiveUpdatePort: 9264
