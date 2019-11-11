@@ -75,6 +75,9 @@ public class PlayerMovement : MonoBehaviour
                 dashing = true;
                 dashTimeCounter = 0;
                 dashVelocity = velocity.normalized * speed * Time.deltaTime * dashSpeedMultiplyer;
+                /*jpost audio*/
+                //play the dash sound
+                PlayDashSound();
             }
         }
 
@@ -92,5 +95,15 @@ public class PlayerMovement : MonoBehaviour
             if (dashCooldownTimer < dashCooldown)
                 dashCooldownTimer += Time.deltaTime;
         }
+    }
+
+    /*jpost audio*/
+    /// <summary>
+    /// simple method to trigger the FMOD audio event for the player dash sound 
+    /// </summary>
+    private void PlayDashSound()
+    {
+        //play the dash event
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Player/Movement/play_cc_sx_game_plr_dash_test_01", GetComponent<Transform>().position);
     }
 }
