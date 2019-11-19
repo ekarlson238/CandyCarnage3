@@ -8,6 +8,7 @@ using UnityEngine;
 /// Purpose:
 ///     This script's sole purpose is to test the animations for the Chocolate Double Door Object.
 /// </summary>
+[RequireComponent(typeof(Animator))]
 public class ChocolateDoorTestingScript : MonoBehaviour
 {
     private Animator chocolateDoorAnimator;
@@ -22,7 +23,7 @@ public class ChocolateDoorTestingScript : MonoBehaviour
 
         // Set the animator's isOpen property to be equal to the default isOpen value. 
         // This must use isOpen and NOT IsOpen since IsOpen isn't declared til after this function
-        chocolateDoorAnimator.SetBool("isOpen", isOpen);
+        chocolateDoorAnimator.SetBool("IsOpen", isOpen);
     }
 
     /// <summary>
@@ -33,18 +34,17 @@ public class ChocolateDoorTestingScript : MonoBehaviour
     public bool IsOpen
     {
         get {
-                isOpen = chocolateDoorAnimator.GetBool("isOpen");
                 return isOpen;
             }
-        set { chocolateDoorAnimator.SetBool("isOpen", value); }
+        set {
+                isOpen = value;
+                chocolateDoorAnimator.SetBool("IsOpen", isOpen);
+            }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(IsOpen == true)
-            chocolateDoorAnimator.SetBool("isOpen", IsOpen);
-        else if (IsOpen == false)
-            chocolateDoorAnimator.SetBool("isOpen", IsOpen);
+        chocolateDoorAnimator.SetBool("IsOpen", IsOpen);
     }
 }
