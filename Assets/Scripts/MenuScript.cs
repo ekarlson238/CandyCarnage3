@@ -47,4 +47,9 @@ public class MenuScript : MonoBehaviour
         menuPanel.SetActive(true);
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
 }
