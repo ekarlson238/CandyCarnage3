@@ -99,8 +99,8 @@ public class Enemy : MonoBehaviour
             AttackPlayer();
         }
 
-        foreach(GameObject player in players)
-            Debug.Log(player);
+        //foreach(GameObject player in players)
+        //    Debug.Log(player);
     }
 
 
