@@ -263,7 +263,7 @@ MonoBehaviour:
   menuCanvas: {fileID: 525319666}
   menuPanel: {fileID: 1688851485}
   creditPanel: {fileID: 1882758578}
-  sceneName: SampleScene - Prototype 1.2
+  sceneName: TutorialTest
 --- !u!1001 &320218099
 PrefabInstance:
   m_ObjectHideFlags: 0
