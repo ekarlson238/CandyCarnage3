@@ -12,6 +12,7 @@ TagManager:
   - SpawnedEnemiesParent
   - EnemyAudioManager
   - EnemySpawner
+  - Ground
   layers:
   - Default
   - TransparentFX

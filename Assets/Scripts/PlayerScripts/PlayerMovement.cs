@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    //Will be edited with the CustomEditorGUI
     public float speed = 500f;
     
     private Rigidbody playerBody;
